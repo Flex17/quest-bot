@@ -18,10 +18,8 @@ theme: /
             state: Left
                 q: * *лев* *
                 a: Вас съел дракон. Хотите попробовать еще раз?
-                
-                state: Return
-                    q: * *да* *
-                    go!: /Start
+                go!: /Start
+                    
                 
             state: Right
                 q: * *прав* *
