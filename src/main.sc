@@ -35,7 +35,7 @@ theme: /
                     
                     state: Play
                         q: * *да* *
-                        
+                        a: {{ playGame() }}
                 
             state: Straight
                 q: * *прям* *
