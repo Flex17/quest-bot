@@ -1,5 +1,6 @@
 require: slotfilling/slotFilling.sc
   module = sys.zb-common
+require: functions.js 
 theme: /
 
     state: Start
@@ -22,6 +23,10 @@ theme: /
                 q: * *прав* *
                 a: Перед вами сундук, ваши действия?
                 
+                state: Open
+                    q: открыть
+                    a: в сундуке оказались монеты, ровно {{ getRandomInt(10) }}
+                
             state: Straight
                 q: * *прям* *
                 a: Вы упали в яму
@@ -29,6 +34,10 @@ theme: /
             state: Back
                 q: * (назад|~вернуться|~вернуть|~возвращаться) *
                 a: Вход завалило. Выберите другое направление.
+                
+            state: NoMatchWay
+                event!: noMatch
+                a: Выберите направление
         
     state: NoMatch
         event!: noMatch
