@@ -1,7 +1,7 @@
 require: slotfilling/slotFilling.sc
   module = sys.zb-common
 require: functions.js 
-require: playGame.js 
+
 theme: /
 
     state: Start
