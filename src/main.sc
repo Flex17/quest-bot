@@ -8,7 +8,7 @@ theme: /
         a: Молви друг и войди
         
         state: NoMatchPhrase
-            q!: noMatch
+            event!: noMatch
             a: Неверный ответ!
         
         state: Friend
