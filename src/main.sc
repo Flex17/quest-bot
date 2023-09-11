@@ -7,6 +7,10 @@ theme: /
         q!: $regex</start>
         a: Молви друг и войди
         
+        state: NoMatchPhrase
+            q!: noMatch
+            a: Неверный ответ!
+        
         state: Friend
                 q: друг
                 a: А теперь скажи друг на эльфийском
@@ -17,7 +21,7 @@ theme: /
             
             state: Left
                 q: * *лев* *
-                a: Вас съел дракон. Хотите попробовать еще раз?
+                a: Вас съел дракон.
                 go!: /Start
                     
                 
