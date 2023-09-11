@@ -31,7 +31,17 @@ theme: /
                 
                 state: Open
                     q: * *откр* *
-                    a: в сундуке оказались монеты, ровно {{ $context.coins = getRandomInt(10) }} {{$context.coins}}
+                    a: в сундуке оказались монеты, ровно {{ $context.coins = getRandomInt(10) }}. Хотите
+                    сыграть в игру? В ней вы можете преумножить монеты или лишиться их вовсе.
+                    
+                state: Play
+                    q: да
+                    a: {{ 
+                        getRandomInt(1) 
+                            ? 'Поздравляю, вы преумножили количество своих монет, теперь их $context.coins * 2' 
+                            : `Вы потеряли свои монеты ${$context.coins = 0}`
+                        }}
+                    
                 
             state: Straight
                 q: * *прям* *
