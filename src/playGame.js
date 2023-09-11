@@ -1,4 +1,4 @@
-const playGame = () => {
+function playGame = {
     const isWinned = getRandomInt(1) > 0.5;
     
     if (isWinned) {
