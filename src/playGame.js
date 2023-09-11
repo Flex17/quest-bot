@@ -3,7 +3,7 @@ function playGame() {
     
     if (isWinned) {
         $context.coins *= 2;
-        return `Вы победили, количество ваших очков ${$context.coins}`;
+        return `Вы победили, количество ваших очков ${$coins}`;
     }
     
     $context.coins = 0;
