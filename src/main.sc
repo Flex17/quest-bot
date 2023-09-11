@@ -4,20 +4,12 @@ theme: /
 
     state: Start
         q!: $regex</start>
-        a: Начнём.
-
-    state: Hello
-        intent!: /привет
-        a: Привет привет
-
-    state: Bye
-        intent!: /пока
-        a: Пока пока
-
+        a: Молви друг и войди
+        
+        state: Melon
+            q: Melon
+            a: Входите!
+        
     state: NoMatch
         event!: noMatch
-        a: Я не понял. Вы сказали: {{$request.query}}
-
-    state: Match
-        event!: match
-        a: {{$context.intent.answer}}
+        a: Попробуйте сказать это на эльфийском!
