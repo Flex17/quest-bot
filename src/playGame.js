@@ -1,5 +1,5 @@
 function playGame() {
-    const isWinned = getRandomInt(1) > 0.5;
+    var isWinned = getRandomInt(1) > 0.5;
     
     if (isWinned) {
         $context.coins *= 2;
