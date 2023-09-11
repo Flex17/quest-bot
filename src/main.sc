@@ -9,7 +9,7 @@ theme: /
         
         state: NoMatchPhrase
             event!: noMatch
-            a: Неверный ответ!
+            a: Неверный ответ! Попробуй еще раз
         
         state: Friend
                 q: друг
@@ -31,7 +31,7 @@ theme: /
                 
                 state: Open
                     q: * *откр* *
-                    a: в сундуке оказались монеты, ровно {{ getRandomInt(10) }}
+                    a: в сундуке оказались монеты, ровно {{ $coins = getRandomInt(10) }} {{$coins}}
                 
             state: Straight
                 q: * *прям* *
