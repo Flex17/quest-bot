@@ -31,7 +31,7 @@ theme: /
                 
                 state: Open
                     q: * *откр* *
-                    a: в сундуке оказались монеты, ровно {{ $coins = getRandomInt(10) }} {{$coins}}
+                    a: в сундуке оказались монеты, ровно {{ $context.coins = getRandomInt(10) }} {{$context.coins}}
                 
             state: Straight
                 q: * *прям* *
