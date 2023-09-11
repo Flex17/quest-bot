@@ -7,7 +7,7 @@ theme: /
         a: Молви друг и войди
         
         state: Melon
-            q: Melon
+            q: melon
             a: Входите!
         
     state: NoMatch
