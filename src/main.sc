@@ -21,7 +21,7 @@ theme: /
                 
                 state: Return
                     q: * *да* *
-                    go: /Start
+                    go!: /Start
                 
             state: Right
                 q: * *прав* *
