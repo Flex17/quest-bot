@@ -3,7 +3,7 @@ function getRandomInt(max) {
 }
 
 function playGame(context) {
-    var isWinned = getRandomInt(1) > 0.5;
+    var isWinned = getRandomInt(2) % 2 === 1;
     
     if (isWinned) {
         context.coins *= 2;
