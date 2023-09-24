@@ -36,7 +36,7 @@ theme: /
                     
                     state: Play
                         q: * *да* *
-                        a: {{ playGame($context) }}
+                        a: {{ playGame() }}
                         
                     state: Return
                         q: * *нет* *
